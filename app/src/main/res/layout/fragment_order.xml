@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mocha"
+    tools:context=".OrderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/cardview_dark_background">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:src="@drawable/promo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/mochaSpecialImageView"
+                    android:layout_width="158dp"
+                    android:layout_height="206dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="129dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mocho_special"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/machoSpecialTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Macho Macho Special"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mochaSpecialImageView" />
+
+                <TextView
+                    android:id="@+id/machoSpecialPriceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:text="€ 5.99"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/machoSpecialTextView" />
+
+                <Button
+                    android:id="@+id/mochaSpecialOrderButton"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/mocha"
+                    android:fontFamily="sans-serif-black"
+                    android:text="+"
+                    app:layout_constraintStart_toEndOf="@+id/machoSpecialPriceTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/mochaSpecialImageView" />
+
+                <ImageView
+                    android:id="@+id/cappuchinoImageView"
+                    android:layout_width="158dp"
+                    android:layout_height="206dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="129dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cappuchino"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/cappuchinoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="96dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Cappuchino"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cappuchinoImageView" />
+
+                <TextView
+                    android:id="@+id/cappuchinoPriceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="128dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="€ 3.99"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cappuchinoTextView" />
+
+                <Button
+                    android:id="@+id/cappuchinoOrderButton"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/mocha"
+                    android:fontFamily="sans-serif-black"
+                    android:text="+"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cappuchinoImageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/cinnamonTeaImageView"
+                    android:layout_width="158dp"
+                    android:layout_height="206dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="129dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cinnamon_tea"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/cinnamonTeaTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Cinnamon Tea"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cinnamonTeaImageView" />
+
+                <TextView
+                    android:id="@+id/cinnamonTeaPriceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:text="€ 6.99"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cinnamonTeaTextView" />
+
+                <Button
+                    android:id="@+id/cinnamonTeaOrderButton"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/mocha"
+                    android:fontFamily="sans-serif-black"
+                    android:text="+"
+                    app:layout_constraintStart_toEndOf="@+id/cinnamonTeaPriceTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/cinnamonTeaImageView" />
+
+                <ImageView
+                    android:id="@+id/machiatoImageView"
+                    android:layout_width="158dp"
+                    android:layout_height="206dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="129dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/machiato"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/machiatoTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="116dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Machiato"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/machiatoImageView" />
+
+                <TextView
+                    android:id="@+id/machiatoPriceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="135dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="€ 3.49"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/machiatoTextView" />
+
+                <Button
+                    android:id="@+id/machiatoOrderButton"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/mocha"
+                    android:fontFamily="sans-serif-black"
+                    android:text="+"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/machiatoImageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/hotChocolateImageView"
+                    android:layout_width="158dp"
+                    android:layout_height="206dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="129dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hot_chocolate"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/hotChocolateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Hot Chocolate"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hotChocolateImageView" />
+
+                <TextView
+                    android:id="@+id/hotChocolatePriceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="€ 4.49"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hotChocolateTextView" />
+
+                <Button
+                    android:id="@+id/hotChocolateOrderButton"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/mocha"
+                    android:fontFamily="sans-serif-black"
+                    android:text="+"
+                    app:layout_constraintStart_toEndOf="@+id/hotChocolatePriceTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/hotChocolateImageView" />
+
+                <ImageView
+                    android:id="@+id/latteImageView"
+                    android:layout_width="158dp"
+                    android:layout_height="206dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="129dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/latte"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/latteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="140dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Latte"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/latteImageView" />
+
+                <TextView
+                    android:id="@+id/lattePriceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="132dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="€ 4.99"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/latteTextView" />
+
+                <Button
+                    android:id="@+id/latteOrderButton"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/mocha"
+                    android:fontFamily="sans-serif-black"
+                    android:text="+"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/latteImageView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mocha"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="261dp"
+        android:layout_height="202dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="75dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/headingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="126dp"
+        android:fontFamily="@font/amita"
+        android:text="Experience 8 Years of Brewing Excellence with a Modern Twist"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <TextView
+        android:id="@+id/firstTextView"
+        android:layout_width="380dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/amita"
+        android:text="Since opening our doors 8 years ago, Mocha Mocha has been dedicated to crafting unforgettable coffee moments. From our signature blends to your favorite pastries, we’ve built a tradition of quality, warmth, and community."
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headingTextView" />
+
+    <TextView
+        android:id="@+id/secondTextView"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/amita"
+        android:text="Now, we’re embracing technology to make your coffee experience even smoother. Discover our new app to order ahead, and stay connected with exclusive deals—all while enjoying the same handcrafted perfection you’ve come to love."
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstTextView" />
+
+    <TextView
+        android:id="@+id/thirdTextView"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/amita"
+        android:text="At Mocha Mocha, we’re brewing the future, one cup at a time."
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
