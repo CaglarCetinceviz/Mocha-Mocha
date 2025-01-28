@@ -10,18 +10,21 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <ImageView
-        android:id="@+id/logoImageView"
+    <ImageButton
+        android:id="@+id/logoImageButton"
         android:layout_width="261dp"
         android:layout_height="202dp"
         android:layout_gravity="center"
         android:layout_marginStart="75dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="75dp"
+        android:scaleType="fitXY"
         android:src="@drawable/logo2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Enter How Much Cookies You Want"
+        android:hint="e.g 8"/>
 
     <TextView
         android:id="@+id/headingTextView"
@@ -38,7 +41,7 @@
         android:textSize="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/logoImageButton" />
 
     <TextView
         android:id="@+id/firstTextView"

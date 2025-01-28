@@ -22,12 +22,13 @@
                 android:layout_height="200dp"
                 android:background="@color/cardview_dark_background">
 
-                <ImageView
-                    android:id="@+id/imageView7"
+                <ImageButton
+                    android:id="@+id/promoImageButton"
                     android:layout_width="350dp"
                     android:layout_height="150dp"
                     android:layout_marginTop="24dp"
                     android:layout_marginBottom="24dp"
+                    android:scaleType="fitXY"
                     android:src="@drawable/promo"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
